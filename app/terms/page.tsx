@@ -9,12 +9,14 @@ export const metadata = {
 const sections = [
   {
     icon: "description",
+    color: "bg-[#131b2e]",
     title: "مقدمة",
     content:
       "مرحبا بكم في موقع مؤسسة سهلناها التقنيه. أيّها الضيف الكريم، إثر زيارتك للموقع، أنت تضمنُ موافقتك على الشروط والأحكام الحالية. وإن كنت لا توافق عليها، يجدر بك عدم استخدام هذا الموقع. يحتفظ الموقع بالحقّ في تغيير أجزاءٍ من شروط الاستخدام والأحكام أو تعديلها أو إضافة البعض منها، أو إزالتها في أي وقتٍ من الأوقات. وتصبح التغييراتُ فعّالةً عندما يتمّ نشرها على الموقع من دون سابق إنذار. يُرجى مراجعة شروط الاستخدام والأحكام بشكلٍ منتظمٍ لمواكبة كلّ التحديثات. ويشكّل استخدامك المستمرّ للموقع موافقتك التامة على كلّ التغييرات التي يجري إحداثها على شروط الاستخدام والأحكام.\n\nعبر تثبيت عضويتك في هذا الموقع أو استخدام المنتجات من خلال الموقع، تقر وتعترف بما يلي:",
   },
   {
     icon: "person",
+    color: "bg-[#005047]",
     title: "1. التأهل للعضوية",
     items: [
       "الموقع ليس متاح للأشخاص الذين تم تعليق أو سحب عضويتهم من قبل مؤسسة سهلناها التقنيه.",
@@ -24,6 +26,7 @@ const sections = [
   },
   {
     icon: "manage_accounts",
+    color: "bg-[#775a19]",
     title: "2. حسابك والتزامات التسجيل",
     content: "عملية التسجيل لمستخدمين مؤسسة سهلناها التقنيه تتطلب منك:",
     items: [
@@ -38,6 +41,7 @@ const sections = [
   },
   {
     icon: "shopping_cart",
+    color: "bg-[#131b2e]",
     title: "3. عمليات الشراء",
     content: "معالجة الطلبات:",
     items: [
@@ -52,6 +56,7 @@ const sections = [
   },
   {
     icon: "payments",
+    color: "bg-[#775a19]",
     title: "4. الرسوم والخدمات",
     items: [
       "قد تتم جميع المبالغ للسلع على الموقع عبر الإنترنت أو جزئياً عبر الإنترنت من خلال خدمات الدفع المتوفرة لدينا، بطاقات الائتمان أو غيرها من وسائل الدفع.",
@@ -61,18 +66,21 @@ const sections = [
   },
   {
     icon: "language",
+    color: "bg-[#005047]",
     title: "5. شروط استخدام الموقع الالكتروني",
     content:
       "جميع المحتويات المتاحة من خلال هذا الموقع (بما في ذلك، دون حصر، النص والتصميم والرسومات والشعارات والرموز والصور والمقاطع الصوتية والتنزيلات، واجهات، رمز والبرمجيات) هي ملكية حصرية لمؤسسة سهلناها التقنيه ومحمية بموجب حقوق النشر والعلامات التجارية وغيرها من القوانين المعمول بها.\n\nمؤسسة سهلناها التقنيه تمنحك ترخيصاً محدوداً للوصول والاستفادة الشخصية لهذا الموقع. لا يجوز لك استخدام عنوان بريد إلكتروني زائف أو غيره من المعلومات الشخصية، انتحال شخصية أي شخص أو كيان أو خلاف ذلك تضليل لأصل أي محتوى.\n\nاستخدامك لهذا الموقع على مسؤوليتك وحدك. يتم توفير الموقع على أساس \"كما هو\" وأساس \"ما هو متاح\". نحن نحتفظ بالحق في تقييد أو إنهاء وصولك إلى الموقع أو أي ميزة أو جزء منها في أي وقت.",
   },
   {
     icon: "email",
+    color: "bg-[#131b2e]",
     title: "6. الاتصالات الإلكترونية",
     content:
       "عند استخدام الموقع أو إرسال رسائل البريد الإلكتروني إلى مؤسسة سهلناها التقنيه، فأنت على اتصال معنا إلكترونياً. أنت توافق على تلقي أية بلاغات تتعلق إلكترونياً باستخدامك لهذا الموقع. مؤسسة سهلناها التقنيه تتواصل معك عن طريق البريد الإلكتروني أو عن طريق نشر إشعارات على هذا الموقع. أنت توافق على أن كافة الاتفاقات والإشعارات والإفصاحات وغيرها من الاتصالات التي يتم توفيرها لك إلكترونياً تلبي أي مطلب قانوني بأن هذه الرسائل تكون كتابية.",
   },
   {
     icon: "verified_user",
+    color: "bg-[#005047]",
     title: "7. حماية المشتري",
     items: [
       "إذا كان المشتري قد اشترى منتجاً ولم يتسلمه أبداً أو تسلم منتج يستحق أقل بكثير في القيمة بالمقارنة مع ما وصف، المشتري ينبغي أن لا يتسلم أو يقبل الحزمة وبعدها يطلع مؤسسة سهلناها التقنيه في غضون 48 ساعة من الاستلام، وسوف نقوم بالتحقيق في الأمر.",
@@ -82,24 +90,28 @@ const sections = [
   },
   {
     icon: "handshake",
+    color: "bg-[#775a19]",
     title: "8. الاتفاق الكامل",
     content:
       "تشكل شروط الاستخدام والخدمة مجمل الاتفاق بينك وبين مؤسسة سهلناها التقنيه بشأن مسائل محددة في هذه الوثيقة، وجميع الاتفاقات السابقة، والرسائل، والمقترحات والمناقشات وغيرها من الوثائق المتعلقة بالمسائل هنا يتم استبدالها ودمجها في شروط الاستخدام والخدمة.",
   },
   {
     icon: "privacy_tip",
+    color: "bg-[#131b2e]",
     title: "9. سياسة الخصوصية",
     content:
       "نسخة من سياسة الخصوصية التي تنطبق على المجموعة والاستخدام والإفصاح والمعالجة الأخرى للمعلومات الشخصية متاحة في صفحة سياسة الخصوصية. إنك توافق على أن أي معلومات شخصية قد نحصل عليها عنك (إما عن طريق الموقع، عن طريق البريد الإلكتروني أو الهاتف أو أي وسيلة أخرى) يتم جمعها وتخزينها ومعالجتها وفقاً لشروط سياسة الخصوصية. مؤسسة سهلناها التقنيه قد تقوم بتحديث سياسة الخصوصية من وقت لآخر وفقاً لتقديرها.",
   },
   {
     icon: "info",
+    color: "bg-[#005047]",
     title: "10. معلومات عامة",
     content:
       "إذا كانت أية فقرة واردة في اتفاقية المستخدم هذه غير صالحة أو ملغاة أو أنها لأي سبب لم تعد نافذة، فإن مثل هذه الفقرة لا تلغي صلاحية بقية الفقرات الواردة في الاتفاقية. هذه الاتفاقية تضع كافة الخطوط العريضة للتفاهم والاتفاق بينك وبين مؤسسة سهلناها التقنيه. ليس من حق أي شخص لا يكون طرفاً في اتفاقية المستخدم هذه أن يفرض أية بنود أو شروط فيها.",
   },
   {
     icon: "gavel",
+    color: "bg-[#775a19]",
     title: "11. القانون والتشريع الحاكمان",
     content:
       "اتفاقية المستخدم هذه محكومة ومصاغة بحسب قانون المملكة العربية السعودية، وهي خاضعة تماماً وكلياً للتشريع المعمول به في محاكم المملكة العربية السعودية. هذه الفقرة توجد بديلاً يتم اللجوء إليه في حال انتهاء مفعول اتفاقية المستخدم هذه أو إلغاؤها لأي سبب كان.",
@@ -110,64 +122,73 @@ export default function TermsPage() {
   return (
     <>
       <Header />
-      <main dir="rtl" className="max-w-[900px] mx-auto px-3 sm:px-6 lg:px-8 py-6 sm:py-16">
-        {/* Hero */}
-        <div className="text-center mb-6 sm:mb-14">
-          <div className="inline-flex items-center justify-center w-14 h-14 sm:w-20 sm:h-20 rounded-full bg-[#1E90FF]/10 mb-3 sm:mb-4">
-            <span className="material-symbols-outlined text-[#1E90FF] text-[28px] sm:text-[40px]">
-              gavel
-            </span>
+      <main dir="rtl" className="min-h-screen bg-[#f7f9fb]">
+        {/* Hero Section */}
+        <section className="relative overflow-hidden bg-gradient-to-bl from-[#131b2e] via-[#1a2540] to-[#000000] py-12 sm:py-16 md:py-24">
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-10 right-10 sm:right-20 w-48 sm:w-72 h-48 sm:h-72 rounded-full bg-[#fed488] blur-[80px] sm:blur-[100px]" />
+            <div className="absolute bottom-10 left-10 sm:left-20 w-64 sm:w-96 h-64 sm:h-96 rounded-full bg-[#3cddc7] blur-[80px] sm:blur-[120px]" />
           </div>
-          <h1 className="text-xl sm:text-3xl md:text-4xl font-bold text-[#0A1A2F]">
-            الشروط والأحكام
-          </h1>
-          <p className="text-xs sm:text-base text-[#0A1A2F]/60 mt-2 max-w-md mx-auto">
-            يرجى قراءة الشروط والأحكام بعناية قبل استخدام الموقع
-          </p>
-        </div>
+          <div className="relative max-w-[1280px] mx-auto px-4 sm:px-8 md:px-12 text-center">
+            <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-3 sm:px-4 py-1.5 sm:py-2 mb-4 sm:mb-6">
+              <span className="material-symbols-outlined text-[#fed488] text-[16px] sm:text-[20px]">
+                gavel
+              </span>
+              <span className="text-xs sm:text-sm text-white/80">اتفاقية الاستخدام</span>
+            </div>
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2 sm:mb-4 tracking-tight">
+              الشروط والأحكام
+            </h1>
+            <p className="text-xs sm:text-sm md:text-base text-white/60 max-w-lg mx-auto leading-relaxed">
+              يرجى قراءة الشروط والأحكام بعناية قبل استخدام الموقع
+            </p>
+          </div>
+        </section>
 
-        {/* Sections */}
-        <div className="space-y-4 sm:space-y-6">
-          {sections.map((section) => (
-            <div
-              key={section.title}
-              className="bg-white border border-[#1E90FF]/10 rounded-2xl p-4 sm:p-7 shadow-sm hover:shadow-md transition-shadow"
-            >
-              <div className="flex items-start gap-2.5 sm:gap-4">
-                <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-xl bg-[#1E90FF]/10 flex items-center justify-center shrink-0">
-                  <span className="material-symbols-outlined text-[#1E90FF] text-[18px] sm:text-[24px]">
-                    {section.icon}
-                  </span>
-                </div>
-                <div className="flex-1 min-w-0">
-                  <h2 className="text-base sm:text-lg font-bold text-[#0A1A2F] mb-2">
+        {/* Content */}
+        <section className="max-w-[900px] mx-auto px-3 sm:px-6 md:px-8 -mt-8 sm:-mt-10 md:-mt-14 relative z-10 pb-12 sm:pb-16 md:pb-24">
+          <div className="space-y-3 sm:space-y-4">
+            {sections.map((section) => (
+              <div
+                key={section.title}
+                className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-[#e0e3e5]"
+              >
+                <div className="flex items-center gap-2.5 sm:gap-3 mb-3 sm:mb-4">
+                  <div className={`w-8 h-8 sm:w-10 sm:h-10 rounded-lg ${section.color} flex items-center justify-center shrink-0`}>
+                    <span className="material-symbols-outlined text-white text-[16px] sm:text-[20px]">
+                      {section.icon}
+                    </span>
+                  </div>
+                  <h2 className="text-sm sm:text-base md:text-lg font-semibold text-[#131b2e]">
                     {section.title}
                   </h2>
+                </div>
+                <div className="sm:pr-[44px] md:pr-[52px]">
                   {section.content && (
-                    <p className="text-sm sm:text-[15px] text-[#0A1A2F]/70 leading-relaxed">
+                    <p className="text-[12px] sm:text-[13px] md:text-[15px] text-[#45464d] leading-[1.7] sm:leading-[1.8] whitespace-pre-line">
                       {section.content}
                     </p>
                   )}
                   {section.items && (
-                    <ul className="mt-3 space-y-2">
-                      {section.items.map((item) => (
+                    <ul className={`space-y-2 ${section.content ? "mt-3" : ""}`}>
+                      {section.items.map((item, i) => (
                         <li
-                          key={item}
-                          className="flex items-start gap-2 text-sm sm:text-[15px] text-[#0A1A2F]/70"
+                          key={i}
+                          className="flex items-start gap-2 text-[12px] sm:text-[13px] md:text-[15px] text-[#45464d] leading-[1.7]"
                         >
-                          <span className="material-symbols-outlined text-[#2ECC71] text-[16px] mt-0.5 shrink-0">
+                          <span className="material-symbols-outlined text-[#005047] text-[14px] sm:text-[16px] mt-0.5 shrink-0">
                             check_circle
                           </span>
-                          {item}
+                          <span>{item}</span>
                         </li>
                       ))}
                     </ul>
                   )}
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </section>
       </main>
       <Footer />
       <WhatsAppButton />

@@ -1,37 +1,28 @@
-import Image from "next/image";
-
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-[400px] sm:min-h-[500px] md:min-h-[600px] overflow-hidden flex items-center">
-      <Image
-        src="/hero.webp"
-        alt="مؤسسة سهلناها التقنيه - أفضل الأجهزة بأعلى جودة وأفضل سعر"
-        fill
-        className="object-cover"
-        priority
-      />
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0A1A2F]/90 via-[#0F3D5E]/80 to-[#1E90FF]/40" />
-      {/* Decorative circles */}
-      <div className="absolute top-10 left-10 w-32 h-32 sm:w-64 sm:h-64 rounded-full bg-[#1E90FF]/10 blur-3xl" />
-      <div className="absolute bottom-10 right-10 w-40 h-40 sm:w-72 sm:h-72 rounded-full bg-[#2ECC71]/10 blur-3xl" />
-      <div className="relative z-10 max-w-[1280px] mx-auto w-full px-4 sm:px-6 lg:px-8 text-center">
-        <span className="inline-block bg-[#1E90FF]/20 border border-[#1E90FF]/40 text-[#1E90FF] text-xs sm:text-sm px-4 py-1.5 rounded-full mb-4 sm:mb-6">
-          مؤسسة سهلناها التقنيه
-        </span>
-        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight max-w-3xl mx-auto mb-4 md:mb-6">
-          أفضل الأجهزة الإلكترونية بأعلى جودة وأفضل سعر
+    <section className="relative w-full h-[700px] overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://lh3.googleusercontent.com/aida-public/AB6AXuB6OH72HlWKWY10rA9QXeKZToGbx4Mcx_M2EW25KVC3MN_Qyfu3YzPUSEsBzDEjKCQtwZKCK-GS5R6SxJan7zSTZ5eGCt3LL8HGNeTGAvz0on3dmmey0wkDvgbUMlUI2TzRwxrix9YHjHlwW1IPXiI-Z6P8sKQiSsI_gz-XDXaB37zS-rIB_SfJOthrcdA2GYaNSJYgVl4W2soO1KCSPVpzumcWafRejq8g4XeDZGipVVp5cf6mxJWNWwjNkN1CPhe7W7_TwpUuumI9')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/30" />
+      </div>
+      <div className="relative z-10 flex flex-col justify-center items-start h-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-12 text-right">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[60px] lg:leading-[72px] font-bold text-white max-w-3xl mb-6 leading-tight tracking-tight">
+          منزلك يستحق الأفضل - تكنولوجيا الغد في مطبخك اليوم
         </h1>
-        <p className="text-sm sm:text-base md:text-lg text-white/70 max-w-xl mx-auto mb-8 md:mb-10">
-          نوفر لكم أحدث الابتكارات التقنية من أرقى الماركات العالمية لضمان تجربة استثنائية.
+        <p className="text-base sm:text-lg text-white/90 max-w-xl mb-12">
+          اكتشف مجموعتنا الحصرية من الأجهزة المنزلية الذكية التي تجمع بين التصميم العصري والأداء الفائق لتحويل روتينك اليومي إلى تجربة فاخرة.
         </p>
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-          <a href="/products" className="bg-[#1E90FF] text-white px-8 sm:px-10 py-3 sm:py-3.5 rounded-full text-base sm:text-lg font-semibold hover:shadow-lg hover:shadow-[#1E90FF]/40 hover:scale-105 transition-all duration-300">
-            تسوق الآن
-          </a>
-          <a href="/contact" className="border-2 border-white/30 text-white px-8 sm:px-10 py-3 sm:py-3.5 rounded-full text-base sm:text-lg font-semibold hover:bg-white/10 hover:border-white/50 transition-all duration-300">
-            تواصل معنا
-          </a>
-        </div>
+        <a
+          href="/products"
+          className="bg-[#fed488] text-[#785a1a] px-10 py-4 rounded-lg text-lg sm:text-xl font-medium hover:bg-[#ffdea5] transition-all shadow-lg active:scale-95"
+        >
+          تسوق الآن
+        </a>
       </div>
     </section>
   );

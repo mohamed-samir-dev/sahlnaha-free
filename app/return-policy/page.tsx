@@ -10,153 +10,186 @@ export default function ReturnPolicyPage() {
   return (
     <>
       <Header />
-      <main dir="rtl" className="max-w-[900px] mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16">
-        {/* Hero */}
-        <div className="text-center mb-8 sm:mb-14">
-          <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#1E90FF]/10 mb-4">
-            <span className="material-symbols-outlined text-[#1E90FF] text-[32px] sm:text-[40px]">
-              assignment_return
-            </span>
+      <main dir="rtl" className="min-h-screen bg-[#f7f9fb]">
+        {/* Hero Section */}
+        <section className="relative overflow-hidden bg-gradient-to-bl from-[#131b2e] via-[#1a2540] to-[#000000] py-12 sm:py-16 md:py-24">
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-10 right-10 sm:right-20 w-48 sm:w-72 h-48 sm:h-72 rounded-full bg-[#fed488] blur-[80px] sm:blur-[100px]" />
+            <div className="absolute bottom-10 left-10 sm:left-20 w-64 sm:w-96 h-64 sm:h-96 rounded-full bg-[#3cddc7] blur-[80px] sm:blur-[120px]" />
           </div>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0A1A2F]">
-            سياسة الاسترجاع
-          </h1>
-          <p className="text-sm sm:text-base text-[#0A1A2F]/60 mt-3 max-w-md mx-auto leading-relaxed">
-            نحن في مؤسسة سهلناها التقنيه نسعى دائمًا لضمان رضا عملائنا. إذا لم تكن راضيًا عن عملية الشراء، يمكنك استبدال أو استرجاع المنتجات وفقًا للشروط التالية:
-          </p>
-        </div>
-
-        {/* Sections */}
-        <div className="space-y-4 sm:space-y-5">
-          {/* فترة الاستبدال والاسترجاع */}
-          <section className="bg-white border border-[#1E90FF]/10 rounded-2xl p-5 sm:p-7 shadow-sm">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl flex items-center justify-center shrink-0 bg-[#1E90FF]/10">
-                <span className="material-symbols-outlined text-[20px] sm:text-[22px] text-[#1E90FF]">schedule</span>
-              </div>
-              <h2 className="text-[15px] sm:text-lg font-bold text-[#0A1A2F]">فترة الاستبدال والاسترجاع</h2>
+          <div className="relative max-w-[1280px] mx-auto px-4 sm:px-8 md:px-12 text-center">
+            <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-white/10 backdrop-blur-sm border border-white/10 rounded-full px-3 sm:px-4 py-1.5 sm:py-2 mb-4 sm:mb-6">
+              <span className="material-symbols-outlined text-[#fed488] text-[16px] sm:text-[20px]">
+                verified
+              </span>
+              <span className="text-xs sm:text-sm text-white/80">ضمان حقوقك</span>
             </div>
-            <ul className="space-y-2.5 pr-2">
-              <li className="flex items-start gap-2.5 text-[13px] sm:text-[15px] text-[#0A1A2F]/70 leading-relaxed">
-                <span className="material-symbols-outlined text-[16px] mt-0.5 shrink-0 text-[#2ECC71]">check_circle</span>
-                <span>يمكن استرجاع العطور خلال <strong>3 أيام</strong> من تاريخ الشراء</span>
-              </li>
-              <li className="flex items-start gap-2.5 text-[13px] sm:text-[15px] text-[#0A1A2F]/70 leading-relaxed">
-                <span className="material-symbols-outlined text-[16px] mt-0.5 shrink-0 text-[#2ECC71]">check_circle</span>
-                <span>يمكن استبدال العطور خلال <strong>7 أيام</strong> من تاريخ الشراء</span>
-              </li>
-            </ul>
-          </section>
-
-          {/* شروط الاستبدال والاسترجاع */}
-          <section className="bg-white border border-[#1E90FF]/10 rounded-2xl p-5 sm:p-7 shadow-sm">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl flex items-center justify-center shrink-0 bg-[#1E90FF]/10">
-                <span className="material-symbols-outlined text-[20px] sm:text-[22px] text-[#1E90FF]">checklist</span>
-              </div>
-              <h2 className="text-[15px] sm:text-lg font-bold text-[#0A1A2F]">شروط الاستبدال والاسترجاع</h2>
-            </div>
-            <ul className="space-y-2.5 pr-2">
-              <li className="flex items-start gap-2.5 text-[13px] sm:text-[15px] text-[#0A1A2F]/70 leading-relaxed">
-                <span className="material-symbols-outlined text-[16px] mt-0.5 shrink-0 text-[#2ECC71]">check_circle</span>
-                <span>يجب أن يكون المنتج في حالته الأصلية وغير مفتوح</span>
-              </li>
-              <li className="flex items-start gap-2.5 text-[13px] sm:text-[15px] text-[#0A1A2F]/70 leading-relaxed">
-                <span className="material-symbols-outlined text-[16px] mt-0.5 shrink-0 text-[#2ECC71]">check_circle</span>
-                <span>يجب أن يكون المنتج في عبوته الأصلية مع جميع الملحقات والملصقات</span>
-              </li>
-              <li className="flex items-start gap-2.5 text-[13px] sm:text-[15px] text-[#0A1A2F]/70 leading-relaxed">
-                <span className="material-symbols-outlined text-[16px] mt-0.5 shrink-0 text-[#2ECC71]">check_circle</span>
-                <span>يجب تقديم إيصال الشراء أو إثبات الدفع</span>
-              </li>
-            </ul>
-          </section>
-
-          {/* المنتجات غير القابلة للاستبدال */}
-          <section className="bg-white border border-[#1E90FF]/10 rounded-2xl p-5 sm:p-7 shadow-sm">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl flex items-center justify-center shrink-0 bg-red-50">
-                <span className="material-symbols-outlined text-[20px] sm:text-[22px] text-red-500">block</span>
-              </div>
-              <h2 className="text-[15px] sm:text-lg font-bold text-[#0A1A2F]">المنتجات غير القابلة للاستبدال أو الاسترجاع</h2>
-            </div>
-            <ul className="space-y-2.5 pr-2">
-              <li className="flex items-start gap-2.5 text-[13px] sm:text-[15px] text-[#0A1A2F]/70 leading-relaxed">
-                <span className="material-symbols-outlined text-[16px] mt-0.5 shrink-0 text-red-500">close</span>
-                <span>الأجهزة الإلكترونية التي تم فتحها أو استخدامها</span>
-              </li>
-              <li className="flex items-start gap-2.5 text-[13px] sm:text-[15px] text-[#0A1A2F]/70 leading-relaxed">
-                <span className="material-symbols-outlined text-[16px] mt-0.5 shrink-0 text-red-500">close</span>
-                <span>لا يسمح باسترجاع الأجهزة التي تم تفعيلها أو تسجيلها بحساب المستخدم</span>
-              </li>
-              <li className="flex items-start gap-2.5 text-[13px] sm:text-[15px] text-[#0A1A2F]/70 leading-relaxed">
-                <span className="material-symbols-outlined text-[16px] mt-0.5 shrink-0 text-red-500">close</span>
-                <span>لا يسمح باسترجاع الملحقات والإكسسوارات بعد فتحها</span>
-              </li>
-              <li className="flex items-start gap-2.5 text-[13px] sm:text-[15px] text-[#0A1A2F]/70 leading-relaxed">
-                <span className="material-symbols-outlined text-[16px] mt-0.5 shrink-0 text-red-500">close</span>
-                <span>المنتج المستخدم لا يتم استرجاعه إلا في حالة وجود عيب مصنعي</span>
-              </li>
-              <li className="flex items-start gap-2.5 text-[13px] sm:text-[15px] text-[#0A1A2F]/70 leading-relaxed">
-                <span className="material-symbols-outlined text-[16px] mt-0.5 shrink-0 text-red-500">close</span>
-                <span>الاستبدال سيكون بنفس المنتج في حال وجود عيب مصنعي. غير متاح استبدال المنتج بمنتج آخر، فقط استرجاع وعمل طلب بالمنتج الجديد</span>
-              </li>
-            </ul>
-          </section>
-
-          {/* إجراءات الاستبدال والاسترجاع */}
-          <section className="bg-white border border-[#1E90FF]/10 rounded-2xl p-5 sm:p-7 shadow-sm">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl flex items-center justify-center shrink-0 bg-[#1E90FF]/10">
-                <span className="material-symbols-outlined text-[20px] sm:text-[22px] text-[#1E90FF]">store</span>
-              </div>
-              <h2 className="text-[15px] sm:text-lg font-bold text-[#0A1A2F]">إجراءات الاستبدال والاسترجاع</h2>
-            </div>
-            <p className="text-[13px] sm:text-[15px] text-[#0A1A2F]/70 leading-relaxed pr-2">
-              يتم توجيه العملاء إلى أي من فروعنا لإتمام عملية الاستبدال أو الاسترجاع.
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2 sm:mb-4 tracking-tight">
+              سياسة الاسترجاع والاستبدال
+            </h1>
+            <p className="text-xs sm:text-sm md:text-base text-white/60 max-w-lg mx-auto leading-relaxed">
+              نسعى دائمًا لضمان رضاك. إذا لم تكن راضيًا عن عملية الشراء، يمكنك الاستبدال أو الاسترجاع وفقًا للشروط التالية
             </p>
-          </section>
+          </div>
+        </section>
 
-          {/* استرداد المبلغ */}
-          <section className="bg-white border border-[#1E90FF]/10 rounded-2xl p-5 sm:p-7 shadow-sm">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl flex items-center justify-center shrink-0 bg-[#2ECC71]/10">
-                <span className="material-symbols-outlined text-[20px] sm:text-[22px] text-[#2ECC71]">payments</span>
+        {/* Content */}
+        <section className="max-w-[900px] mx-auto px-3 sm:px-6 md:px-8 -mt-8 sm:-mt-10 md:-mt-14 relative z-10 pb-12 sm:pb-16 md:pb-24">
+          {/* Highlight Cards */}
+          <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-6 sm:mb-10">
+            <div className="bg-white rounded-lg sm:rounded-xl p-3 sm:p-5 shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-[#e0e3e5] text-center">
+              <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-full bg-[#005047]/10 flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                <span className="material-symbols-outlined text-[#005047] text-[18px] sm:text-[24px]">
+                  schedule
+                </span>
               </div>
-              <h2 className="text-[15px] sm:text-lg font-bold text-[#0A1A2F]">استرداد المبلغ</h2>
+              <p className="text-lg sm:text-2xl font-bold text-[#131b2e]">3 أيام</p>
+              <p className="text-[11px] sm:text-sm text-[#45464d]">للاسترجاع</p>
             </div>
-            <ul className="space-y-2.5 pr-2">
-              <li className="flex items-start gap-2.5 text-[13px] sm:text-[15px] text-[#0A1A2F]/70 leading-relaxed">
-                <span className="material-symbols-outlined text-[16px] mt-0.5 shrink-0 text-[#2ECC71]">check_circle</span>
-                <span>يتم استرداد المبلغ بنفس طريقة الدفع الأصلية</span>
-              </li>
-              <li className="flex items-start gap-2.5 text-[13px] sm:text-[15px] text-[#0A1A2F]/70 leading-relaxed">
-                <span className="material-symbols-outlined text-[16px] mt-0.5 shrink-0 text-[#2ECC71]">check_circle</span>
-                <span>قد يستغرق استرداد المبلغ من <strong>3 إلى 7 أيام عمل</strong>، وقد تصل المدة إلى 14 يوم عمل في بعض الحالات</span>
-              </li>
-            </ul>
-          </section>
+            <div className="bg-white rounded-lg sm:rounded-xl p-3 sm:p-5 shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-[#e0e3e5] text-center">
+              <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-full bg-[#775a19]/10 flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                <span className="material-symbols-outlined text-[#775a19] text-[18px] sm:text-[24px]">
+                  swap_horiz
+                </span>
+              </div>
+              <p className="text-lg sm:text-2xl font-bold text-[#131b2e]">7 أيام</p>
+              <p className="text-[11px] sm:text-sm text-[#45464d]">للاستبدال</p>
+            </div>
+            <div className="bg-white rounded-lg sm:rounded-xl p-3 sm:p-5 shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-[#e0e3e5] text-center">
+              <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-full bg-[#131b2e]/10 flex items-center justify-center mx-auto mb-2 sm:mb-3">
+                <span className="material-symbols-outlined text-[#131b2e] text-[18px] sm:text-[24px]">
+                  payments
+                </span>
+              </div>
+              <p className="text-lg sm:text-2xl font-bold text-[#131b2e]">3-14</p>
+              <p className="text-[11px] sm:text-sm text-[#45464d]">يوم للاسترداد</p>
+            </div>
+          </div>
 
-          {/* التواصل */}
-          <section className="bg-white border border-[#1E90FF]/10 rounded-2xl p-5 sm:p-7 shadow-sm">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl flex items-center justify-center shrink-0 bg-[#1E90FF]/10">
-                <span className="material-symbols-outlined text-[20px] sm:text-[22px] text-[#1E90FF]">support_agent</span>
+          {/* Detail Sections */}
+          <div className="space-y-3 sm:space-y-5">
+            {/* شروط الاستبدال والاسترجاع */}
+            <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-[#e0e3e5]">
+              <div className="flex items-center gap-2.5 sm:gap-3 mb-3 sm:mb-4">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-[#005047] flex items-center justify-center shrink-0">
+                  <span className="material-symbols-outlined text-white text-[16px] sm:text-[20px]">
+                    checklist
+                  </span>
+                </div>
+                <h2 className="text-sm sm:text-lg md:text-xl font-semibold text-[#131b2e]">شروط الاستبدال والاسترجاع</h2>
               </div>
-              <h2 className="text-[15px] sm:text-lg font-bold text-[#0A1A2F]">للمزيد من المعلومات</h2>
+              <div className="sm:pr-[44px] md:pr-[52px]">
+                <ul className="space-y-2.5">
+                  {[
+                    "يجب أن يكون المنتج في حالته الأصلية وغير مفتوح",
+                    "يجب أن يكون المنتج في عبوته الأصلية مع جميع الملحقات والملصقات",
+                    "يجب تقديم إيصال الشراء أو إثبات الدفع",
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-2 text-[12px] sm:text-[13px] md:text-[15px] text-[#45464d] leading-[1.7]">
+                      <span className="material-symbols-outlined text-[#005047] text-[14px] sm:text-[16px] mt-0.5 shrink-0">check_circle</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
-            <ul className="space-y-3 pr-2">
-              <li className="flex items-center gap-2.5 text-[13px] sm:text-[15px] text-[#0A1A2F]/70">
-                <span className="material-symbols-outlined text-[18px] shrink-0 text-[#1E90FF]">phone</span>
-                <a href="tel:0592069730" className="text-[#1E90FF] underline font-medium" dir="ltr">0592069730</a>
-              </li>
-              <li className="flex items-center gap-2.5 text-[13px] sm:text-[15px] text-[#0A1A2F]/70">
-                <span className="material-symbols-outlined text-[18px] shrink-0 text-[#2ECC71]">chat</span>
-                <a href="https://wa.me/966592069730" target="_blank" rel="noopener noreferrer" className="text-[#2ECC71] underline font-medium" dir="ltr">0592069730</a>
-              </li>
-            </ul>
-          </section>
-        </div>
+
+            {/* المنتجات غير القابلة للاسترجاع */}
+            <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-[#e0e3e5]">
+              <div className="flex items-center gap-2.5 sm:gap-3 mb-3 sm:mb-4">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-[#ba1a1a] flex items-center justify-center shrink-0">
+                  <span className="material-symbols-outlined text-white text-[16px] sm:text-[20px]">
+                    block
+                  </span>
+                </div>
+                <h2 className="text-sm sm:text-lg md:text-xl font-semibold text-[#131b2e]">المنتجات غير القابلة للاسترجاع</h2>
+              </div>
+              <div className="sm:pr-[44px] md:pr-[52px]">
+                <div className="bg-[#ffdad6]/30 border border-[#ffdad6] rounded-lg p-3 sm:p-4">
+                  <ul className="space-y-2.5">
+                    {[
+                      "الأجهزة الإلكترونية التي تم فتحها أو استخدامها",
+                      "لا يسمح باسترجاع الأجهزة التي تم تفعيلها أو تسجيلها بحساب المستخدم",
+                      "لا يسمح باسترجاع الملحقات والإكسسوارات بعد فتحها",
+                      "المنتج المستخدم لا يتم استرجاعه إلا في حالة وجود عيب مصنعي",
+                      "الاستبدال سيكون بنفس المنتج في حال وجود عيب مصنعي فقط",
+                    ].map((item, i) => (
+                      <li key={i} className="flex items-start gap-2 text-[12px] sm:text-[13px] md:text-[15px] text-[#45464d] leading-[1.7]">
+                        <span className="material-symbols-outlined text-[#ba1a1a] text-[14px] sm:text-[16px] mt-0.5 shrink-0">close</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* إجراءات الاسترجاع */}
+            <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-[#e0e3e5]">
+              <div className="flex items-center gap-2.5 sm:gap-3 mb-3 sm:mb-4">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-[#131b2e] flex items-center justify-center shrink-0">
+                  <span className="material-symbols-outlined text-white text-[16px] sm:text-[20px]">
+                    store
+                  </span>
+                </div>
+                <h2 className="text-sm sm:text-lg md:text-xl font-semibold text-[#131b2e]">إجراءات الاستبدال والاسترجاع</h2>
+              </div>
+              <div className="sm:pr-[44px] md:pr-[52px]">
+                <p className="text-[12px] sm:text-[13px] md:text-[15px] text-[#45464d] leading-[1.7]">
+                  يتم توجيه العملاء إلى أي من فروعنا لإتمام عملية الاستبدال أو الاسترجاع.
+                </p>
+              </div>
+            </div>
+
+            {/* استرداد المبلغ */}
+            <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-[#e0e3e5]">
+              <div className="flex items-center gap-2.5 sm:gap-3 mb-3 sm:mb-4">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-[#775a19] flex items-center justify-center shrink-0">
+                  <span className="material-symbols-outlined text-white text-[16px] sm:text-[20px]">
+                    account_balance_wallet
+                  </span>
+                </div>
+                <h2 className="text-sm sm:text-lg md:text-xl font-semibold text-[#131b2e]">استرداد المبلغ</h2>
+              </div>
+              <div className="sm:pr-[44px] md:pr-[52px]">
+                <div className="bg-[#fed488]/20 border border-[#fed488]/40 rounded-lg p-3 sm:p-4">
+                  <ul className="space-y-2.5">
+                    <li className="flex items-start gap-2 text-[12px] sm:text-[13px] md:text-[15px] text-[#45464d] leading-[1.7]">
+                      <span className="material-symbols-outlined text-[#775a19] text-[14px] sm:text-[16px] mt-0.5 shrink-0">check_circle</span>
+                      <span>يتم استرداد المبلغ بنفس طريقة الدفع الأصلية</span>
+                    </li>
+                    <li className="flex items-start gap-2 text-[12px] sm:text-[13px] md:text-[15px] text-[#45464d] leading-[1.7]">
+                      <span className="material-symbols-outlined text-[#775a19] text-[14px] sm:text-[16px] mt-0.5 shrink-0">check_circle</span>
+                      <span>قد يستغرق استرداد المبلغ من <strong className="text-[#775a19]">3 إلى 7 أيام عمل</strong>، وقد تصل المدة إلى 14 يوم عمل</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* التواصل */}
+            <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 md:p-8 shadow-[0_4px_24px_rgba(0,0,0,0.04)] border border-[#e0e3e5]">
+              <div className="flex items-center gap-2.5 sm:gap-3 mb-3 sm:mb-4">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-[#005047] flex items-center justify-center shrink-0">
+                  <span className="material-symbols-outlined text-white text-[16px] sm:text-[20px]">
+                    support_agent
+                  </span>
+                </div>
+                <h2 className="text-sm sm:text-lg md:text-xl font-semibold text-[#131b2e]">تواصل معنا</h2>
+              </div>
+              <div className="sm:pr-[44px] md:pr-[52px] flex flex-col sm:flex-row gap-2 sm:gap-4">
+                <a href="tel:0592069730" className="flex items-center gap-2 bg-[#f7f9fb] border border-[#e0e3e5] rounded-lg px-3 sm:px-4 py-2.5 hover:border-[#131b2e] transition-colors">
+                  <span className="material-symbols-outlined text-[#131b2e] text-[16px] sm:text-[18px]">phone</span>
+                  <span className="text-[12px] sm:text-[13px] md:text-sm font-medium text-[#131b2e]" dir="ltr">0592069730</span>
+                </a>
+                <a href="https://wa.me/966592069730" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-[#005047]/5 border border-[#3cddc7]/30 rounded-lg px-3 sm:px-4 py-2.5 hover:border-[#005047] transition-colors">
+                  <span className="material-symbols-outlined text-[#005047] text-[16px] sm:text-[18px]">chat</span>
+                  <span className="text-[12px] sm:text-[13px] md:text-sm font-medium text-[#005047]" dir="ltr">واتساب</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
       <WhatsAppButton />
