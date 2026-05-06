@@ -42,7 +42,7 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: "مؤسسة سهلناها التقنيه",
-        type: "image/jpeg",
+        type: "image/png",
       },
     ],
   },
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title: "مؤسسة سهلناها التقنيه | أفضل الأجهزة بأعلى جودة وأفضل سعر",
     description:
       "وجهتكم الأولى لأحدث الأجهزة الإلكترونية والتقنيات المنزلية والمكتبية.",
-    images: ["https://sahalnahatechnology.com/og-image.jpg"],
+    images: ["https://sahalnahatechnology.com/og-image.png"],
   },
   robots: {
     index: true,
@@ -66,7 +66,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
+  },
+  other: {
+    "msapplication-TileImage": "/android-chrome-192x192.png",
   },
   manifest: "/site.webmanifest",
 };
