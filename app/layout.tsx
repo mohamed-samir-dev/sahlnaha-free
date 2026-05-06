@@ -9,7 +9,7 @@ const cairo = Cairo({
   weight: ["300", "400", "500", "600", "700", "800", "900"],
 });
 
-const siteUrl = "https://www.madaar-electronics.com";
+const siteUrl = "https://sahalnahatechnology.com/";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
       "وجهتكم الأولى لأحدث الأجهزة الإلكترونية والتقنيات المنزلية والمكتبية. نوفر لكم أحدث الابتكارات التقنية من أرقى الماركات العالمية.",
     images: [
       {
-        url: "https://www.madaar-electronics.com/og-image.jpg",
+        url: "https://sahalnahatechnology.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "مؤسسة سهلناها التقنيه",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title: "مؤسسة سهلناها التقنيه | أفضل الأجهزة بأعلى جودة وأفضل سعر",
     description:
       "وجهتكم الأولى لأحدث الأجهزة الإلكترونية والتقنيات المنزلية والمكتبية.",
-    images: ["https://www.madaar-electronics.com/og-image.jpg"],
+    images: ["https://sahalnahatechnology.com/og-image.jpg"],
   },
   robots: {
     index: true,
